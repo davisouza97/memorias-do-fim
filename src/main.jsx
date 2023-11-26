@@ -16,27 +16,27 @@ const baseUrl = "memorias-do-fim"
 
 const router = createBrowserRouter([
   {
-    path: baseUrl + "/area1",
+    path: "/area1",
     element: <Area1 />,
   },
   {
-    path: baseUrl +  "/area2",
+    path: "area2",
     element: <Area2 />,
   },
   {
-    path: baseUrl +  "/area3",
+    path: "/area3",
     element: <Area3 />,
   },
   {
-    path: baseUrl +  "/area4",
+    path: "/area4",
     element: <Area4 />,
   },
   {
-    path: baseUrl + "/area5",
+    path: "/area5",
     element: <Area5 />,
   },
   {
-    path: baseUrl + "/area6",
+    path: "/area6",
     element: <Area6 />,
   },
   {
