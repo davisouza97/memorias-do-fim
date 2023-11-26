@@ -40,7 +40,7 @@ const router = createBrowserRouter([
     element: <Area6 />,
   },
   {
-    path: "/*",
+    path: baseUrl + "/*",
     element: <Root />,
   }
 ]);
