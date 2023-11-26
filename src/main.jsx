@@ -12,35 +12,37 @@ import Area4 from './routes/area4.jsx';
 import Area5 from './routes/area6.jsx';
 import Area6 from './routes/area6.jsx';
 
+const baseUrl = "memorias-do-fim"
+
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Root />,
-  },
-  {
-    path: "/area1",
+    path: baseUrl + "/area1",
     element: <Area1 />,
   },
   {
-    path: "/area2",
+    path: baseUrl +  "/area2",
     element: <Area2 />,
   },
   {
-    path: "/area3",
+    path: baseUrl +  "/area3",
     element: <Area3 />,
   },
   {
-    path: "/area4",
+    path: baseUrl +  "/area4",
     element: <Area4 />,
   },
   {
-    path: "/area5",
+    path: baseUrl + "/area5",
     element: <Area5 />,
   },
   {
-    path: "/area6",
+    path: baseUrl + "/area6",
     element: <Area6 />,
   },
+  {
+    path: "/*",
+    element: <Root />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
