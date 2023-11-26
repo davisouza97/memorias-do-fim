@@ -1,20 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,
-  RouterProvider,
+  RouterProvider, createHashRouter
 } from "react-router-dom";
-import Root from './routes/root.jsx';
 import Area1 from './routes/area1.jsx';
 import Area2 from './routes/area2.jsx';
 import Area3 from './routes/area3.jsx';
 import Area4 from './routes/area4.jsx';
-import Area5 from './routes/area6.jsx';
-import Area6 from './routes/area6.jsx';
+import { default as Area5, default as Area6 } from './routes/area6.jsx';
+import Root from './routes/root.jsx';
 
 const baseUrl = "memorias-do-fim"
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/area1",
     element: <Area1 />,
@@ -40,7 +38,7 @@ const router = createBrowserRouter([
     element: <Area6 />,
   },
   {
-    path: baseUrl + "/*",
+    path: "*",
     element: <Root />,
   }
 ]);
